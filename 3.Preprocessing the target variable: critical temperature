@@ -1,3 +1,13 @@
+In any regression problem, you want the target variable to be as close to a normal distribution as possible. Sometimes this is possible to do, other times not. 
+In this case I was able to transform the critical temperature to be approximately normal.
+
+Originally the data was very, very positively skewed. After a lot of trial and error, I used an exponential transformation to get the data (approximately) normal.
+
+Unfortunately in the best fit there remained a slight skew. The highest peak wasn't simply an outlier and couldn't be dropped or imputed. Despite this, 
+the results observed at the end were pretty good.
+
+
+
 import pandas as pd
 import seaborn as sns
 import warnings
